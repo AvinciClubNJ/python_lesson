@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 letter = input("Enter a body.")
 space = " "
 count = 1
@@ -16,4 +18,3 @@ for h in range(1,height+1):
     print(space*(h-1)+letter*(2*height+1-2*h))
 print()
 print("Goodbye.")
-
