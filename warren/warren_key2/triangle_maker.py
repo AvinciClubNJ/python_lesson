@@ -29,3 +29,4 @@ for x in range(0, int(height)):
     print(' ' * number, letter * y)
     number += 1
     y = y - 2
+print("Goodbye")
