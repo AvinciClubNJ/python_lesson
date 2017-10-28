@@ -7,7 +7,7 @@ if len(userinput) > 1:
 elif isinstance(userinput, str) == False:
 	print("Please imput a letter.")
 elif (userinput >= 'a' and userinput <= 'z') != True:
-	print("Please imput a letter.")
+	print("Please imput a lowercase letter.")
 else: 
 	goodimput = True
 
