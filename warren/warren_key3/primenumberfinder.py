@@ -3,7 +3,7 @@ import sys
 import math #Cuz why not?
 #Find prime numbers between 100 and 200
 primelist = []
-for x in range(12, 401):
+for x in range(100, 201):
     addthing = False
     for y in range(2, x):
         if x % y == 0:
