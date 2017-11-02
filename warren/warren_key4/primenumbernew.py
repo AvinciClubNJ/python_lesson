@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import sys
 import math #Cuz why not?
-#Find prime numbers between 100 and 200
 print("Welcome to the prime number generator!")
 
 def primenumberfind(input1, input2):
