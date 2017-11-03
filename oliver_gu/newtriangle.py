@@ -1,7 +1,7 @@
 #!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
 
 userinput = raw_input("What letter?\n")
-goodimput = False
+goodinput = False
 if len(userinput) > 1:
 	print("Please imput one letter.")
 elif isinstance(userinput, str) == False:
@@ -9,11 +9,11 @@ elif isinstance(userinput, str) == False:
 elif (userinput >= 'a' and userinput <= 'z') != True:
 	print("Please imput a lowercase letter.")
 else: 
-	goodimput = True
+	goodinput = True
 
-if goodimput != True:
+if goodinput != True:
 	print("Try again.")
-elif goodimput == True:
+elif goodinput == True:
 	width = input("Enter an odd base width < 20.\n")
 elif isinstance(width, int) == False:
 	print("Please imput an integer.")
@@ -24,6 +24,6 @@ elif width > 20:
 elif width%2 == 0:
 	print("Please imput an odd integer.")
 
-if goodimput == True:	
+if goodinput == True:	
 	for x in range(1,width):
 		print(" "*((width+1)-x-2)+userinput*(x*2-1))
