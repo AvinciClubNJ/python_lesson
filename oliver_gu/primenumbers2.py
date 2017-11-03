@@ -3,17 +3,25 @@
 goodinput = False
 
 while goodinput == False:
-    minimum = input("Enter minimum value.\n")
-    if isinstance(minimum, int) or isinstance(minimum, float):
+    try:
+         minimum = input("Enter minimum value.\n")
+    except NameError:
+        print("Please input a number.")
+        continue
+    if isinstance(minimum, int):
         goodinput = True
         break
     else:
         goodinput = False
-        print("Please input a number.")
+        print("Please input an integer.")
 
-while goodinput == False:
-    maximum = input("Enter maximum value.\n")
-    if isinstance(int(maximum), int) or isinstance(float(maximum), float):
+while True:
+    try: 
+        maximum = input("Enter maximum value.\n")
+    except NameError:
+        print("Please input a number.")
+        continue
+    if isinstance(maximum, int):
         if maximum <= minimum:
             goodinput = False
             print("Please imput a value greater than the minimum.")
@@ -22,10 +30,10 @@ while goodinput == False:
             break
     else:
         goodinput = False
-        print("Please imput a number.")
+        print("Please imput an integer.")
 
 for x in range(minimum,maximum+1):
-	for y in range(2,x//2):
+	for y in range(2,x//2+1):
 		if x%y == 0:
 			break
 	else:
