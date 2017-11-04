@@ -5,7 +5,7 @@ while i <= 9:
  i -= 2
  s += 1
  if i == -1:
-  break
+  #break
 
 i = 1
 s = 4
@@ -14,4 +14,4 @@ while i <= 9:
  i += 2
  s -= 1
  if i == 11:
-  break
+  #break
