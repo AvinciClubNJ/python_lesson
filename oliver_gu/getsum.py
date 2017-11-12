@@ -9,11 +9,13 @@ def get_sum(start, end):
 x = input("Set minimum value. ")
 y = input("Set maximum value. " )
 
-goodimput = False
-if isinstance(x, number) == True and isinstance(y, number) == True:
-	goodimput = True
-else:
-	print("Invalid imput.")
-
-mysum = get_sum(x,y)
-print "Sum of numbers between " + str(x) +  " to " + str(y) + ": " + str(mysum)
+while True:
+	try:
+		a = float(x)
+		b = float(y)
+	except ValueError:
+		print("Invalid imput.")
+		continue
+	mysum = get_sum(int(x),int(y))
+	print("Sum of numbers from " + str(int(x)) +  " to " + str(int(y)) + " inclusive: " + str(mysum))
+	break
