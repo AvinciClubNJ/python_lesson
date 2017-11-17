@@ -20,7 +20,7 @@ while True:
             continue
         break
 
-    if amount > 5:
+    if amount > 4:
         print("Hit the limit of items in the dictionary.")
         print(d)
         break
