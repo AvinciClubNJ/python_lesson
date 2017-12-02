@@ -5,19 +5,20 @@ import sys
 # store dictionary
 store = {}
 
-options = ("1", "2", "3", "one", "two", "three")
+options = ("1", "2", "3", "4", "one", "two", "three", "four")
 
 # routines:
 def printMainMenu():
   print("Main menu:")
   print(" 1. Add item to store")
-  print(" 2. Display all items")
-  print(" 3. Exit")
+  print(" 2. Remove an item from store")  
+  print(" 3. Display all items")
+  print(" 4. Exit")
   print("")
 
 def chooseTask():
   while True:
-    choice = input("Please type your choice(1, 2 , 3): ")
+    choice = input("Please type your choice(1, 2 , 3, 4): ")
     if str.casefold(str(choice)) not in options:
       print("Please select an option.\n")
     else:
@@ -35,6 +36,15 @@ def addItem():
       print("Amount needs to be a natural number.")
   store[name] = amount  
   print("")
+
+def removeItem():
+  delete = input("Please type item name to be removed: ")
+  if delete in store:
+    del store[delete]
+    print("")
+  else:
+    print("Item requested is not in store.")
+    print("")
 
 def printAllItems():
   print("$$$$$$$$$$$$$$$$$$$$$$$$$")
@@ -58,13 +68,17 @@ while True:
   # Choice 1: add item to store
   if str(choice) == "1" or str.casefold(str(choice)) == "one":
     addItem()
-    
-  #Choice 2: print all items
-  elif str(choice) == "2" or str.casefold(str(choice)) == "two":
+
+  #Choice 2: remove item from store
+  if str(choice) == "2" or str.casefold(str(choice)) == "two":
+    removeItem()
+
+  #Choice 3: print all items
+  elif str(choice) == "3" or str.casefold(str(choice)) == "three":
     printAllItems()
   
-  # Choice 3: Exit
-  elif str(choice) == "3" or str.casefold(str(choice)) == "three":
+  # Choice 4: Exit
+  elif str(choice) == "4" or str.casefold(str(choice)) == "four":
     print("Bye!")
     break
   
