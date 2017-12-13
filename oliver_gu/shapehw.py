@@ -17,7 +17,8 @@ class Shape(object):
         return self.__color
 
     def draw(self):
-        pass
+        turtle.home
+        turtle.pencolor(self.getColor())
 
     def calculatePerimeter(self):
         pass
@@ -31,8 +32,7 @@ class Circle(Shape):
         self.perimeter = 2 * self.__radius * math.pi
 
     def draw(self):
-        turtle.home
-        turtle.pencolor(self.getColor())
+        super().draw()
         turtle.circle(self.__radius)
 
 class Triangle(Shape):
@@ -46,8 +46,7 @@ class Triangle(Shape):
         self.perimeter = self._side1 + self._side2 + self._side3
 
     def draw(self):
-        turtle.home
-        turtle.pencolor(self.getColor())
+        super().draw()
         turtle.seth(0)
         turtle.fd(self._side1)
         turtle.left(120)
@@ -65,8 +64,7 @@ class Rectangle(Shape):
         self.perimeter = 2 * (self.width + self.height)
 
     def draw(self):
-        turtle.home
-        turtle.pencolor(self.getColor())
+        super().draw()
         turtle.seth(0)
         turtle.fd(self.width)
         turtle.left(90)
@@ -94,3 +92,5 @@ print("My rectangle color is", myRectangle.getColor())
 myCircle.draw()
 myTriangle.draw()
 myRectangle.draw()
+
+input("Press any key to exit.")
