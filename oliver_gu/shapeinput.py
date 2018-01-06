@@ -144,4 +144,4 @@ except:
     print("WARNING!!!\nInvalid color for rectangle. Color is set to default black.")
     myRectangle.draw()
 
-input("Press any key to exit.")
+input("Press ENTER to exit.")
