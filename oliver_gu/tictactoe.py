@@ -1,9 +1,14 @@
 #!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
 
+import sys
 import turtle
 t = turtle.Turtle()
 sn = turtle.Screen()
 turn = "X"
+
+data = [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]]
 
 class Board:
   def __init__(self, w, c):
@@ -34,125 +39,137 @@ class Board:
     t.forward(w)
     t.pu()
 
-class TictactoeGame:
-  def __init__(self):
-    #0 is empty, 1 is X, 2 is O
-    self.__data = [[0, 0, 0],
-                   [0, 0, 0],
-                   [0, 0, 0]]
-  
   def createBoard(self, w, c):
     self.__board = Board(w,c)
 
-  def changeData(dx, dy, shape):
-    print(shape, dx, dy)
-    global turn
-    if shape == "X":
-        turn = "O"
+def changeData(dx, dy, shape):
+  global turn
+  if shape == "X":
+      turn = "O"
+  else:
+      turn = "X"
+  
+  while True:
+      if dy == 110:
+          row = 0
+          break
+      if dy == -90:
+          row = 1
+          break
+      if dy == -290:
+          row = 2
+          break
+  while True:
+      if dx == -200:
+          data[row][0] = shape
+          #print("row: " + str(row) + " col: " + "0 shape:" + shape)
+          checkWin()
+          break
+      if dx == 0:
+          data[row][1] = shape
+          #print("row: " + str(row) + " col: " + "1 shape:" + shape)
+          checkWin()
+          break
+      if dx == 200:
+          data[row][2] = shape
+          #print("row: " + str(row) + " col: " + "2 shape:" + shape)
+          checkWin()
+          break
+
+def playerPosition(x, y):
+  if x > -300 and x < -100:
+          outX = -200
+          playerCol = 0
+  elif x > -100 and x < 100:
+          outX = 0
+          playerCol = 1
+  elif x > 100 and x < 300:
+          outX = 200
+          playerCol = 2
+      
+  if y > -300 and y < -100:
+          outY = -290
+          playerRow = 2
+  elif y > -100 and y < 100:
+          outY = -90
+          playerRow = 1
+  elif y > 100 and y < 300:
+          outY = 110
+          playerRow = 0
+  return outX, outY, playerRow, playerCol
+
+def playerShape(rawX, rawY):
+  x, y, pRow, pCol = playerPosition(rawX, rawY)
+  if turn == "X":
+    if data[pRow][pCol] == 0:
+      t.setpos(x - 60, y + 20)
+      t.pd()
+      t.setpos(x + 60, y + 140)
+      t.pu()
+      t.setpos(x - 60, y + 140)
+      t.pd()
+      t.setpos(x + 60, y + 20)
+      t.pu()
+      changeData(x, y, "X")
+  elif data[pRow][pCol] == 0:
+      t.setpos(x, y)
+      t.pd()
+      t.circle(80)
+      t.pu()
+      changeData(x, y, "O")
+
+def drawShape():
+  sn.onscreenclick(playerShape)
+
+def checkHor():
+  for row in range(len(data)):
+    for col in range(1, len(data[row])):
+      if (data[row][col] != data[row][col - 1] or 
+          data[row][col] == 0):
+            break
     else:
-        turn = "X"
-    while True:
-        if dy == 110:
-            row = 0
-            break
-        if dy == -90:
-            row = 1
-            break
-        if dy == -290:
-            row = 2
-            break
-    while True:
-        if dx == -200:
-            self.__data[row][0] = shape
-            break
-        if dx == 0:
-            self.__data[row][1] = shape
-            break
-        if dx == 200:
-            self.__data[row][2] = shape
-            break
+      return True
 
-  def playerPosition(x, y):
-    if x > -300 and x < -100:
-            outX = -200
-    elif x > -100 and x < 100:
-            outX = 0
-    elif x > 100 and x < 300:
-            outX = 200
-        
-    if y > -300 and y < -100:
-            outY = -290
-    elif y > -100 and y < 100:
-            outY = -90
-    elif y > 100 and y < 300:
-            outY = 110
-    return outX, outY
-
-  def playerShape(rawX, rawY):
-    if turn == "X":
-        x, y = TictactoeGame.playerPosition(rawX, rawY)
-        print(x, y)
-        t.setpos(x - 60, y + 20)
-        t.pd()
-        t.setpos(x + 60, y + 140)
-        t.pu()
-        t.setpos(x - 60, y + 140)
-        t.pd()
-        t.setpos(x + 60, y + 20)
-        t.pu()
-        TictactoeGame.changeData(x, y, "X")
+def checkVer():
+  for col in range(len(data)):
+    for row in range(1, len(data)):
+      if (data[row][col] != data[row - 1][col] or
+          data[row][col] == 0):
+            break
     else:
-        x, y = TictactoeGame.playerPosition(rawX, rawY)
-        print(x, y)
-        t.setpos(x, y)
-        t.pd()
-        t.circle(80)
-        t.pu()
-        TictactoeGame.changeData(x, y, "O")
+      return True
 
-  def drawShape(self):
-    sn.onscreenclick(TictactoeGame.playerShape)
-  
-  def checkWin(self):
-    #horizontal win
-    for row in range(3):
-      for col in range(1, 3):
-        if (self.__data[row][col] != self.__data[row][col-1] or 
-         self.__data[row][col] == 0):
+def checkTLBR():
+  for rowcol in range(1, len(data)):
+    if (data[rowcol][rowcol] != data[rowcol - 1][rowcol - 1] or
+        data[rowcol][rowcol] == 0):
           break
-        elif col == 2:
-          return True
-    #vertical win
-    for col in range(3):
-      for row in range(1, 3):
-        if (self.__data[row][col] != self.__data[row-1][col] or
-         self.__data[row][col] == 0):
-          break
-        elif row == 2:
-          return True
-    #diagonal top left to bottom right
-    for rowcol in range(1, 3):
-      if (self.__data[rowcol][rowcol] != self.__data[rowcol-1][rowcol-1] or
-       self.__data[rowcol][rowcol] == 0):
-        break
-      elif col == 2:
-        return True
-    #diagonal bottom left to top right
-    for row in range(1, -1, -1):
-      for col in range(1, 3):
-        if (self.__data[row][col] != self.__data[row+1][col-1] or
-         self.__data[row][col] == 0):
-          break
-        elif col == 2:
-          return True
-    return False
-  
-  def input(self, val, row, col):
-    if self.__data[row][col] == 0:
-      self.__data[row][col] = val
-  
-myGame = TictactoeGame()
-myGame.createBoard(600, "yellow")
-myGame.drawShape()
+  else:
+    return True
 
-input("Press ENTER to exit.")
+def checkTRBL():
+  for rowcol in range(1, len(data)):
+    if (data[rowcol][len(data[rowcol]) - 1 - rowcol] != data[rowcol - 1][len(data[rowcol]) - rowcol] or
+        data[rowcol][len(data[rowcol]) - 1 - rowcol] == 0):
+          break
+  else:
+    return True
+
+def checkWin():
+  if turn == "O":
+    winner = "Player 1"
+  else:
+    winner = "Player 2"
+  if checkHor():
+    sys.exit(winner + " horizontal win")
+  if checkVer():
+    sys.exit(winner + " vertical win")
+  if checkTLBR():
+    sys.exit(winner + " diagonal win")
+  if checkTRBL():
+    sys.exit(winner + " diagonal win")
+
+Board(600, "yellow")
+drawShape()
+
+input("Press ENTER to exit.\n")
