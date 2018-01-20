@@ -155,6 +155,13 @@ def checkTRBL():
   else:
     return True
 
+def checkTie():
+  for row in range(len(data)):
+    if all(data[row]) == False:
+      break
+  else:
+    return True
+
 def checkWin():
   if turn == "O":
     winner = "Player 1"
@@ -168,6 +175,8 @@ def checkWin():
     sys.exit(winner + " diagonal win")
   if checkTRBL():
     sys.exit(winner + " diagonal win")
+  if checkTie():
+    sys.exit("Tie")
 
 Board(600, "yellow")
 drawShape()
