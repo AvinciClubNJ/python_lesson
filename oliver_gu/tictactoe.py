@@ -5,6 +5,7 @@ import turtle
 t = turtle.Turtle()
 sn = turtle.Screen()
 turn = "X"
+uniwidth = 200
 
 data = [[0, 0, 0],
         [0, 0, 0],
@@ -15,108 +16,81 @@ class Board:
     sn = turtle.Screen()
     sn.bgcolor(c)
     sn.tracer(10)
-    
-    t.hideturtle()
+    sn.setup(3.5 * w, 3.5 * w)
+    t.speed(0)
     t.pensize(3)
-    t.seth(270)
-    t.speed(9)
-    t.pu()
-    t.setposition(-w / 6, w / 2)
-    t.pd()
-    t.forward(w)
-    t.pu()
-    t.setposition(w / 6, w / 2)
-    t.pd()
-    t.forward(w)
-    t.pu()
-    t.seth(0)
-    t.setposition(-w / 2, w / 6)
-    t.pd()
-    t.forward(w)
-    t.pu()
-    t.setposition(-w / 2, -w / 6)
-    t.pd()
-    t.forward(w)
-    t.pu()
+    t.hideturtle()
+
+    for x in range(4):
+      t.pu()
+      t.setpos(-3*w/2, -3*w/2 + w * x)
+      t.pd()
+      t.fd(3 * w)
+
+    t.lt(90)
+    for y in range(5):
+      t.pu()
+      t.setpos(-3*w/2 + w * y, -3*w/2)
+      t.pd()
+      t.fd(3 * w)
 
   def createBoard(self, w, c):
     self.__board = Board(w,c)
 
-def changeData(dx, dy, shape):
+def changeData(pRow, pCol, shape):
   global turn
   if shape == "X":
       turn = "O"
   else:
       turn = "X"
   
-  while True:
-      if dy == 110:
-          row = 0
-          break
-      if dy == -90:
-          row = 1
-          break
-      if dy == -290:
-          row = 2
-          break
-  while True:
-      if dx == -200:
-          data[row][0] = shape
-          #print("row: " + str(row) + " col: " + "0 shape:" + shape)
-          checkWin()
-          break
-      if dx == 0:
-          data[row][1] = shape
-          #print("row: " + str(row) + " col: " + "1 shape:" + shape)
-          checkWin()
-          break
-      if dx == 200:
-          data[row][2] = shape
-          #print("row: " + str(row) + " col: " + "2 shape:" + shape)
-          checkWin()
-          break
+  data[pRow][pCol] = shape
+  checkWin()
 
 def playerPosition(x, y):
-  if x > -300 and x < -100:
-          outX = -200
+  w = uniwidth
+  if x > -3*w/2 and x < -w/2:
+          outX = -w
           playerCol = 0
-  elif x > -100 and x < 100:
+  elif x > -w/2 and x < w/2:
           outX = 0
           playerCol = 1
-  elif x > 100 and x < 300:
-          outX = 200
+  elif x > w/2 and x < 3*w/2:
+          outX = w
           playerCol = 2
       
-  if y > -300 and y < -100:
-          outY = -290
+  if y > -3*w/2 and y < -w/2:
+          outY = -w
           playerRow = 2
-  elif y > -100 and y < 100:
-          outY = -90
+  elif y > -w/2 and y < w/2:
+          outY = 0
           playerRow = 1
-  elif y > 100 and y < 300:
-          outY = 110
+  elif y > w/2 and y < 3*w/2:
+          outY = w
           playerRow = 0
   return outX, outY, playerRow, playerCol
 
 def playerShape(rawX, rawY):
   x, y, pRow, pCol = playerPosition(rawX, rawY)
+  w = uniwidth
   if turn == "X":
     if data[pRow][pCol] == 0:
-      t.setpos(x - 60, y + 20)
-      t.pd()
-      t.setpos(x + 60, y + 140)
       t.pu()
-      t.setpos(x - 60, y + 140)
+      t.setpos(x - 2*w/5, y + 2*w/5)
       t.pd()
-      t.setpos(x + 60, y + 20)
+      t.setpos(x + 2*w/5, y - 2*w/5)
       t.pu()
-      changeData(x, y, "X")
+      t.setpos(x - 2*w/5, y - 2*w/5)
+      t.pd()
+      t.setpos(x + 2*w/5, y + 2*w/5)
+      t.pu()
+      changeData(pRow, pCol, "X")
   elif data[pRow][pCol] == 0:
-      t.setpos(x, y)
+      t.setpos(x + 2*w/5, y)
       t.pd()
-      t.circle(80)
+      t.circle(2*w/5)
       t.pu()
-      changeData(x, y, "O")
+      changeData(pRow, pCol, "O")
 
 def drawShape():
   sn.onscreenclick(playerShape)
@@ -178,7 +152,7 @@ def checkWin():
   if checkTie():
     sys.exit("Tie")
 
-Board(600, "yellow")
+Board(uniwidth, "yellow")
 drawShape()
 
 input("Press ENTER to exit.\n")
