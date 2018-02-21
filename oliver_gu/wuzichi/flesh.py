@@ -124,7 +124,7 @@ class Piece:
       t.shape("go-black.gif")
     else:
       t.shape("go-white.gif")
-    t.showturtle() 
+    t.stamp() 
 
 # Event receiver class    
 class EventReceiver:

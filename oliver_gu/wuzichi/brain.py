@@ -1,6 +1,6 @@
 #!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
 
-import flesh
+from flesh import *
 
 class Wuzi:
   # Constructor
@@ -12,12 +12,12 @@ class Wuzi:
   # Set white piece on location of 'row' and 'col'
   def setWhite(self, row, col):
     self.data[row][col] = "W"
-    #print(self.data)
+    #print(*self.data, sep='\n')
 
   # Set black piece on location of 'row' and 'col'
   def setBlack(self, row, col):
     self.data[row][col] = "B"
-    #print(self.data)
+    #print(*self.data, sep='\n')
   
   # Check whether location is empty 'row' and 'col'
   # Return:
@@ -29,25 +29,31 @@ class Wuzi:
     else:
       return False
   
-  def checkHor(row, col):
+  def checkHor(self, row, col):
+    global horCount
     horCount = 1
-    if checkHorLeft(row, col):
-      if checkHorRight(row, col):
+    if self.checkHorLeft(row, col):
+      if self.checkHorRight(row, col):
         if horCount >= 5:
+          print(horCount)
           return True
+        else:
+          return False
       else:
         return True
     else:
       return True
 
-  def checkHorLeft(row, col):
+  def checkHorLeft(self, row, col):
+    global horCount
     if horCount >= 5:
       #skip checkHorRight
       return False
     try:
-      if data[row][col] == data[row][col - 1]:
+      if self.data[row][col] == self.data[row][col - 1]:
           horCount += 1
-          checkHorLeft(row, col - 1)
+          if self.checkHorLeft(row, col - 1):
+            return True
       else:
         #no more matches, go to checkHorRight
         return True
@@ -55,14 +61,16 @@ class Wuzi:
         #reached end of board, continue onto checkHorRight
         return True
 
-  def checkHorRight(row, col):
+  def checkHorRight(self, row, col):
+    global horCount
     if horCount >= 5:
       #skip "if horCount >= 5" in checkHor
       return False
     try:
-      if data[row][col] == data[row][col + 1]:
+      if self.data[row][col] == self.data[row][col + 1]:
           horCount += 1
-          checkHorRight(row, col + 1)
+          if self.checkHorRight(row, col + 1):
+            return True
       else:
         #no more matches, return to checkHor and see if horCount >= 5
         return True
@@ -70,10 +78,11 @@ class Wuzi:
       #reached end of board, return to checkHor and see if horCount >= 5
       return True
 
-  def checkVer(row, col):
+  def checkVer(self, row, col):
+    global verCount
     verCount = 1
-    if checkVerDown(row, col):
-      if checkVerUp(row, col):
+    if self.checkVerDown(row, col):
+      if self.checkVerUp(row, col):
         if verCount >= 5:
           return True
       else:
@@ -81,14 +90,16 @@ class Wuzi:
     else:
       return True
 
-  def checkVerDown(row, col):
+  def checkVerDown(self, row, col):
+    global verCount
     if verCount >= 5:
       #skip checkVerUp
       return False
     try:
-      if data[row][col] == data[row - 1][col]:
+      if self.data[row][col] == self.data[row - 1][col]:
           verCount += 1
-          checkVerDown(row - 1, col)
+          if self.checkVerDown(row - 1, col):
+            return True
       else:
         #no more matches, go to checkVerUp
         return True
@@ -96,14 +107,16 @@ class Wuzi:
         #reached end of board, continue onto checkVerUp
         return True
 
-  def checkVerUp(row, col):
+  def checkVerUp(self, row, col):
+    global verCount
     if verCount >= 5:
       #skip "if verCount >= 5" in checkVer
       return False
     try:
-      if data[row][col] == data[row + 1][col]:
+      if self.data[row][col] == self.data[row + 1][col]:
           verCount += 1
-          checkVerUp(row + 1, col)
+          if self.checkVerUp(row + 1, col):
+            return True
       else:
         #no more matches, return to checkVer and see if verCount >= 5
         return True
@@ -111,10 +124,11 @@ class Wuzi:
       #reached end of board, return to checkVer and see if verCount >= 5
       return True
 
-  def checkTLBR(row, col):
+  def checkTLBR(self, row, col):
+    global TLBRCount
     TLBRCount = 1
-    if checkTLBRtl(row, col):
-      if checkTLBRbr(row, col):
+    if self.checkTLBRtl(row, col):
+      if self.checkTLBRbr(row, col):
         if TLBRCount >= 5:
           return True
       else:
@@ -122,14 +136,16 @@ class Wuzi:
     else:
       return True
 
-  def checkTLBRtl(row, col):
+  def checkTLBRtl(self, row, col):
+    global TLBRCount
     if TLBRCount >= 5:
       #skip checkTLBRbr
       return False
     try:
-      if data[row][col] == data[row - 1][col + 1]:
+      if self.data[row][col] == self.data[row - 1][col + 1]:
           TLBRCount += 1
-          checkTLBRtl(row - 1, col + 1)
+          if self.checkTLBRtl(row - 1, col + 1):
+            return True
       else:
         #no more matches, go to checkTLBRbr
         return True
@@ -137,14 +153,16 @@ class Wuzi:
         #reached end of board, continue onto checkTLBRbr
         return True
 
-  def checkTLBRbr(row, col):
+  def checkTLBRbr(self, row, col):
+    global TLBRCount
     if TLBRCount >= 5:
       #skip "if TLBRCount >= 5" in checkTLBR
       return False
     try:
-      if data[row][col] == data[row + 1][col - 1]:
+      if self.data[row][col] == self.data[row + 1][col - 1]:
           TLBRCount += 1
-          checkTLBRbr(row + 1, col - 1)
+          if self.checkTLBRbr(row + 1, col - 1):
+            return True
       else:
         #no more matches, return to checkTLBR and see if TLBRCount >= 5
         return True
@@ -152,10 +170,11 @@ class Wuzi:
       #reached end of board, return to checkTLBR and see if TLBRCount >= 5
       return True
 
-  def checkTRBL(row, col):
+  def checkTRBL(self, row, col):
+    global TRBLCount
     TRBLCount = 1
-    if checkTRBLtr(row, col):
-      if checkTLBRbl(row, col):
+    if self.checkTRBLtr(row, col):
+      if self.checkTRBLbl(row, col):
         if TRBLCount >= 5:
           return True
       else:
@@ -163,14 +182,16 @@ class Wuzi:
     else:
       return True
 
-  def checkTRBLtr(row, col):
+  def checkTRBLtr(self, row, col):
+    global TRBLCount
     if TRBLCount >= 5:
       #skip checkTRBLbl
       return False
     try:
-      if data[row][col] == data[row + 1][col + 1]:
+      if self.data[row][col] == self.data[row + 1][col + 1]:
           TRBLCount += 1
-          checkTRBLtr(row + 1, col + 1)
+          if self.checkTRBLtr(row + 1, col + 1):
+            return True
       else:
         #no more matches, go to checkTRBLbl
         return True
@@ -178,14 +199,16 @@ class Wuzi:
         #reached end of board, continue onto checkTRBLbl
         return True
 
-  def checkTRBLbl(row, col):
+  def checkTRBLbl(self, row, col):
+    global TRBLCount
     if TRBLCount >= 5:
       #skip "if TRBLCount >= 5" in checkTRBL
       return False
     try:
-      if data[row][col] == data[row - 1][col - 1]:
+      if self.data[row][col] == self.data[row - 1][col - 1]:
           TRBLCount += 1
-          checkTRBLbl(row - 1, col - 1)
+          if self.checkTRBLbl(row - 1, col - 1):
+            return True
       else:
         #no more matches, return to checkTRBL and see if TRBLCount >= 5
         return True
@@ -199,13 +222,13 @@ class Wuzi:
   #   'B' - Black win
   #   None - no body win
   def checkWin(self, row, col):
-    if checkHor(row, col):
+    if self.checkHor(row, col):
       return True
-    elif checkVer(row, col):
+    elif self.checkVer(row, col):
       return True
-    elif checkTLBR(row, col):
+    elif self.checkTLBR(row, col):
       return True
-    elif checkTRBL(row, col):
+    elif self.checkTRBL(row, col):
       return True
     else:
       return None
