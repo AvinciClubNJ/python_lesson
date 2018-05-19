@@ -1,0 +1,103 @@
+i= 0  s= 16  d= 2  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 1  s= 37  d= 6  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 2  s= 2  d= 5  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 3  s= 30  d= 4  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 4  s= 2  d= 1  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 5  s= 24  d= 4  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 6  s= 1  d= 1  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 7  s= 35  d= 5  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 8  s= 7  d= 12  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 9  s= 17  d= 1  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 10  s= 4  d= 8  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 11  s= 14  d= 2  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 12  s= 26  d= 2  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 13  s= 12  d= 5  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 14  s= 22  d= 5  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 15  s= 4  d= 6  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 16  s= 64  d= 3  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 17  s= 35  d= 1  indexSteps= 0  lenListSteps= 250
+found = False  indexSteps= 0  result= 0
+i= 18  s= 37  d= 10  indexSteps= 0  lenListSteps= 250
+found = True  indexSteps= 7  result= 0
+found = True  indexSteps= 14  result= 0
+found = True  indexSteps= 23  result= 0
+found = False  indexSteps= 23  result= 0
+i= 19  s= 34  d= 7  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 20  s= 36  d= 10  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 21  s= 26  d= 8  indexSteps= 23  lenListSteps= 250
+i= 22  s= 30  d= 3  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 23  s= 59  d= 2  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 24  s= 57  d= 3  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 25  s= 44  d= 8  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 26  s= 18  d= 3  indexSteps= 23  lenListSteps= 250
+i= 27  s= 12  d= 2  indexSteps= 23  lenListSteps= 250
+i= 28  s= 11  d= 4  indexSteps= 23  lenListSteps= 250
+i= 29  s= 2  d= 5  indexSteps= 23  lenListSteps= 250
+i= 30  s= 59  d= 9  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 31  s= 33  d= 11  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 32  s= 43  d= 9  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 33  s= 22  d= 4  indexSteps= 23  lenListSteps= 250
+i= 34  s= 51  d= 5  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 35  s= 16  d= 7  indexSteps= 23  lenListSteps= 250
+i= 36  s= 49  d= 2  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 37  s= 50  d= 2  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 38  s= 18  d= 1  indexSteps= 23  lenListSteps= 250
+i= 39  s= 39  d= 8  indexSteps= 23  lenListSteps= 250
+found = False  indexSteps= 23  result= 0
+i= 40  s= 5  d= 2  indexSteps= 23  lenListSteps= 250
+i= 41  s= 8  d= 4  indexSteps= 23  lenListSteps= 250
+i= 42  s= 10  d= 5  indexSteps= 23  lenListSteps= 250
+i= 43  s= 23  d= 30  indexSteps= 23  lenListSteps= 250
+i= 44  s= 13  d= 10  indexSteps= 23  lenListSteps= 250
+i= 45  s= 42  d= 17  indexSteps= 23  lenListSteps= 250
+found = True  indexSteps= 37  result= 0
+found = True  indexSteps= 52  result= 0
+found = True  indexSteps= 69  result= 0
+found = True  indexSteps= 81  result= 0
+found = True  indexSteps= 98  result= 0
+found = False  indexSteps= 98  result= 0
+i= 46  s= 33  d= 20  indexSteps= 98  lenListSteps= 250
+found = False  indexSteps= 98  result= 0
+i= 47  s= 40  d= 9  indexSteps= 98  lenListSteps= 250
+found = False  indexSteps= 98  result= 0
+i= 48  s= 52  d= 12  indexSteps= 98  lenListSteps= 250
+found = False  indexSteps= 98  result= 0
+i= 49  s= 49  d= 3  indexSteps= 98  lenListSteps= 250
+found = False  indexSteps= 98  result= 0
+i= 50  s= 1  d= 16  indexSteps= 98  lenListSteps= 250
+i= 51  s= 99  d= 27  indexSteps= 98  lenListSteps= 250
+found = True  indexSteps= 124  result= 0
+found = True  indexSteps= 150  result= 0
+found = True  indexSteps= 177  result= 0
+found = True  indexSteps= 204  result= 0
+found = True  indexSteps= 230  result= 0
+found = False  indexSteps= 230  result= 51

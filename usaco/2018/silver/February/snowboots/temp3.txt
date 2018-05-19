@@ -1,0 +1,658 @@
+i= 0  step:  0
+i= 1  step:  89
+i= 2  step:  150
+i= 3  step:  94
+i= 4  step:  167
+i= 5  step:  92
+i= 6  step:  243
+i= 7  step:  29
+i= 8  step:  209
+i= 9  step:  71
+i= 10  step:  148
+i= 11  step:  69
+i= 12  step:  25
+i= 13  step:  54
+i= 14  step:  34
+i= 15  step:  43
+i= 16  step:  99
+i= 17  step:  140
+i= 18  step:  68
+i= 19  step:  200
+i= 20  step:  160
+i= 21  step:  5
+i= 22  step:  98
+i= 23  step:  28
+i= 24  step:  145
+i= 25  step:  194
+i= 26  step:  146
+i= 27  step:  231
+i= 28  step:  72
+i= 29  step:  235
+i= 30  step:  246
+i= 31  step:  151
+i= 32  step:  166
+i= 33  step:  101
+i= 34  step:  56
+i= 35  step:  121
+i= 36  step:  53
+i= 37  step:  40
+i= 38  step:  161
+i= 39  step:  110
+i= 40  step:  211
+i= 41  step:  173
+i= 42  step:  219
+i= 43  step:  201
+i= 44  step:  77
+i= 45  step:  234
+i= 46  step:  70
+i= 47  step:  13
+i= 48  step:  19
+i= 49  step:  35
+i= 50  step:  103
+i= 51  step:  133
+i= 52  step:  30
+i= 53  step:  242
+i= 54  step:  122
+i= 55  step:  126
+i= 56  step:  79
+i= 57  step:  245
+i= 58  step:  168
+i= 59  step:  3
+i= 60  step:  228
+i= 61  step:  100
+i= 62  step:  8
+i= 63  step:  86
+i= 64  step:  143
+i= 65  step:  10
+i= 66  step:  76
+i= 67  step:  239
+i= 68  step:  48
+i= 69  step:  7
+i= 70  step:  15
+i= 71  step:  218
+i= 72  step:  180
+i= 73  step:  18
+i= 74  step:  125
+i= 75  step:  206
+i= 76  step:  32
+i= 77  step:  207
+i= 78  step:  21
+i= 79  step:  128
+i= 80  step:  67
+i= 81  step:  26
+i= 82  step:  127
+i= 83  step:  119
+i= 84  step:  216
+i= 85  step:  111
+i= 86  step:  109
+i= 87  step:  189
+i= 88  step:  183
+i= 89  step:  107
+i= 90  step:  193
+i= 91  step:  175
+i= 92  step:  24
+i= 93  step:  185
+i= 94  step:  105
+i= 95  step:  176
+i= 96  step:  4
+i= 97  step:  45
+i= 98  step:  33
+i= 99  step:  141
+i= 100  step:  156
+i= 101  step:  131
+i= 102  step:  198
+i= 103  step:  134
+i= 104  step:  191
+i= 105  step:  223
+i= 106  step:  84
+i= 107  step:  248
+i= 108  step:  123
+i= 109  step:  57
+i= 110  step:  58
+i= 111  step:  64
+i= 112  step:  116
+i= 113  step:  78
+i= 114  step:  157
+i= 115  step:  132
+i= 116  step:  38
+i= 117  step:  135
+i= 118  step:  147
+i= 119  step:  144
+i= 120  step:  174
+i= 121  step:  226
+i= 122  step:  230
+i= 123  step:  177
+i= 124  step:  27
+i= 125  step:  149
+i= 126  step:  22
+i= 127  step:  106
+i= 128  step:  195
+i= 129  step:  233
+i= 130  step:  17
+i= 131  step:  12
+i= 132  step:  130
+i= 133  step:  136
+i= 134  step:  188
+i= 135  step:  47
+i= 136  step:  74
+i= 137  step:  225
+i= 138  step:  20
+i= 139  step:  2
+i= 140  step:  236
+i= 141  step:  75
+i= 142  step:  138
+i= 143  step:  73
+i= 144  step:  44
+i= 145  step:  152
+i= 146  step:  213
+i= 147  step:  93
+i= 148  step:  137
+i= 149  step:  153
+i= 150  step:  90
+i= 151  step:  202
+i= 152  step:  1
+i= 153  step:  247
+i= 154  step:  199
+i= 155  step:  203
+i= 156  step:  62
+i= 157  step:  240
+i= 158  step:  82
+i= 159  step:  181
+i= 160  step:  104
+i= 161  step:  196
+i= 162  step:  87
+i= 163  step:  108
+i= 164  step:  41
+i= 165  step:  217
+i= 166  step:  238
+i= 167  step:  63
+i= 168  step:  6
+i= 169  step:  165
+i= 170  step:  80
+i= 171  step:  37
+i= 172  step:  65
+i= 173  step:  229
+i= 174  step:  170
+i= 175  step:  169
+i= 176  step:  81
+i= 177  step:  85
+i= 178  step:  51
+i= 179  step:  178
+i= 180  step:  9
+i= 181  step:  237
+i= 182  step:  83
+i= 183  step:  61
+i= 184  step:  49
+i= 185  step:  124
+i= 186  step:  221
+i= 187  step:  164
+i= 188  step:  214
+i= 189  step:  114
+i= 190  step:  117
+i= 191  step:  224
+i= 192  step:  36
+i= 193  step:  129
+i= 194  step:  52
+i= 195  step:  192
+i= 196  step:  11
+i= 197  step:  139
+i= 198  step:  241
+i= 199  step:  91
+i= 200  step:  97
+i= 201  step:  50
+i= 202  step:  60
+i= 203  step:  204
+i= 204  step:  31
+i= 205  step:  46
+i= 206  step:  227
+i= 207  step:  118
+i= 208  step:  190
+i= 209  step:  113
+i= 210  step:  154
+i= 211  step:  88
+i= 212  step:  215
+i= 213  step:  171
+i= 214  step:  197
+i= 215  step:  142
+i= 216  step:  244
+i= 217  step:  42
+i= 218  step:  208
+i= 219  step:  112
+i= 220  step:  186
+i= 221  step:  159
+i= 222  step:  59
+i= 223  step:  172
+i= 224  step:  210
+i= 225  step:  120
+i= 226  step:  232
+i= 227  step:  212
+i= 228  step:  155
+i= 229  step:  222
+i= 230  step:  39
+i= 231  step:  163
+i= 232  step:  162
+i= 233  step:  158
+i= 234  step:  55
+i= 235  step:  16
+i= 236  step:  205
+i= 237  step:  66
+i= 238  step:  220
+i= 239  step:  95
+i= 240  step:  115
+i= 241  step:  182
+i= 242  step:  14
+i= 243  step:  179
+i= 244  step:  102
+i= 245  step:  96
+i= 246  step:  187
+i= 247  step:  184
+i= 248  step:  23
+i= 249  step:  0
+i= 0  s= 16  d= 2  indexSteps= 0  lenListSteps= 250
+j= 2  step= 150  s= 16
+j= 1  step= 89  s= 16
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 150
+i= 1  s= 37  d= 6  indexSteps= 0  lenListSteps= 250
+j= 6  step= 243  s= 37
+j= 5  step= 92  s= 37
+j= 4  step= 167  s= 37
+j= 3  step= 94  s= 37
+j= 2  step= 150  s= 37
+j= 1  step= 89  s= 37
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 243
+i= 2  s= 2  d= 5  indexSteps= 0  lenListSteps= 250
+j= 5  step= 92  s= 2
+j= 4  step= 167  s= 2
+j= 3  step= 94  s= 2
+j= 2  step= 150  s= 2
+j= 1  step= 89  s= 2
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 92
+i= 3  s= 30  d= 4  indexSteps= 0  lenListSteps= 250
+j= 4  step= 167  s= 30
+j= 3  step= 94  s= 30
+j= 2  step= 150  s= 30
+j= 1  step= 89  s= 30
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 167
+i= 4  s= 2  d= 1  indexSteps= 0  lenListSteps= 250
+j= 1  step= 89  s= 2
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 89
+i= 5  s= 24  d= 4  indexSteps= 0  lenListSteps= 250
+j= 4  step= 167  s= 24
+j= 3  step= 94  s= 24
+j= 2  step= 150  s= 24
+j= 1  step= 89  s= 24
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 167
+i= 6  s= 1  d= 1  indexSteps= 0  lenListSteps= 250
+j= 1  step= 89  s= 1
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 89
+i= 7  s= 35  d= 5  indexSteps= 0  lenListSteps= 250
+j= 5  step= 92  s= 35
+j= 4  step= 167  s= 35
+j= 3  step= 94  s= 35
+j= 2  step= 150  s= 35
+j= 1  step= 89  s= 35
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 92
+i= 8  s= 7  d= 12  indexSteps= 0  lenListSteps= 250
+j= 12  step= 25  s= 7
+j= 11  step= 69  s= 7
+j= 10  step= 148  s= 7
+j= 9  step= 71  s= 7
+j= 8  step= 209  s= 7
+j= 7  step= 29  s= 7
+j= 6  step= 243  s= 7
+j= 5  step= 92  s= 7
+j= 4  step= 167  s= 7
+j= 3  step= 94  s= 7
+j= 2  step= 150  s= 7
+j= 1  step= 89  s= 7
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 25
+i= 9  s= 17  d= 1  indexSteps= 0  lenListSteps= 250
+j= 1  step= 89  s= 17
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 89
+i= 10  s= 4  d= 8  indexSteps= 0  lenListSteps= 250
+j= 8  step= 209  s= 4
+j= 7  step= 29  s= 4
+j= 6  step= 243  s= 4
+j= 5  step= 92  s= 4
+j= 4  step= 167  s= 4
+j= 3  step= 94  s= 4
+j= 2  step= 150  s= 4
+j= 1  step= 89  s= 4
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 209
+i= 11  s= 14  d= 2  indexSteps= 0  lenListSteps= 250
+j= 2  step= 150  s= 14
+j= 1  step= 89  s= 14
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 150
+i= 12  s= 26  d= 2  indexSteps= 0  lenListSteps= 250
+j= 2  step= 150  s= 26
+j= 1  step= 89  s= 26
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 150
+i= 13  s= 12  d= 5  indexSteps= 0  lenListSteps= 250
+j= 5  step= 92  s= 12
+j= 4  step= 167  s= 12
+j= 3  step= 94  s= 12
+j= 2  step= 150  s= 12
+j= 1  step= 89  s= 12
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 92
+i= 14  s= 22  d= 5  indexSteps= 0  lenListSteps= 250
+j= 5  step= 92  s= 22
+j= 4  step= 167  s= 22
+j= 3  step= 94  s= 22
+j= 2  step= 150  s= 22
+j= 1  step= 89  s= 22
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 92
+i= 15  s= 4  d= 6  indexSteps= 0  lenListSteps= 250
+j= 6  step= 243  s= 4
+j= 5  step= 92  s= 4
+j= 4  step= 167  s= 4
+j= 3  step= 94  s= 4
+j= 2  step= 150  s= 4
+j= 1  step= 89  s= 4
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 243
+i= 16  s= 64  d= 3  indexSteps= 0  lenListSteps= 250
+j= 3  step= 94  s= 64
+j= 2  step= 150  s= 64
+j= 1  step= 89  s= 64
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 94
+i= 17  s= 35  d= 1  indexSteps= 0  lenListSteps= 250
+j= 1  step= 89  s= 35
+found = False  indexSteps= 0  step= 0  result= 0
+last step= 89
+i= 18  s= 37  d= 10  indexSteps= 0  lenListSteps= 250
+j= 10  step= 148  s= 37
+j= 9  step= 71  s= 37
+j= 8  step= 209  s= 37
+j= 7  step= 29  s= 37
+found = True  indexSteps= 7  step= 29  result= 0
+last step= 140
+j= 17  step= 140  s= 37
+j= 16  step= 99  s= 37
+j= 15  step= 43  s= 37
+j= 14  step= 34  s= 37
+found = True  indexSteps= 14  step= 34  result= 0
+last step= 145
+j= 24  step= 145  s= 37
+j= 23  step= 28  s= 37
+found = True  indexSteps= 23  step= 28  result= 0
+last step= 101
+j= 33  step= 101  s= 37
+j= 32  step= 166  s= 37
+j= 31  step= 151  s= 37
+j= 30  step= 246  s= 37
+j= 29  step= 235  s= 37
+j= 28  step= 72  s= 37
+j= 27  step= 231  s= 37
+j= 26  step= 146  s= 37
+j= 25  step= 194  s= 37
+j= 24  step= 145  s= 37
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 101
+i= 19  s= 34  d= 7  indexSteps= 23  lenListSteps= 250
+j= 30  step= 246  s= 34
+j= 29  step= 235  s= 34
+j= 28  step= 72  s= 34
+j= 27  step= 231  s= 34
+j= 26  step= 146  s= 34
+j= 25  step= 194  s= 34
+j= 24  step= 145  s= 34
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 246
+i= 20  s= 36  d= 10  indexSteps= 23  lenListSteps= 250
+j= 33  step= 101  s= 36
+j= 32  step= 166  s= 36
+j= 31  step= 151  s= 36
+j= 30  step= 246  s= 36
+j= 29  step= 235  s= 36
+j= 28  step= 72  s= 36
+j= 27  step= 231  s= 36
+j= 26  step= 146  s= 36
+j= 25  step= 194  s= 36
+j= 24  step= 145  s= 36
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 101
+i= 21  s= 26  d= 8  indexSteps= 23  lenListSteps= 250
+i= 22  s= 30  d= 3  indexSteps= 23  lenListSteps= 250
+j= 26  step= 146  s= 30
+j= 25  step= 194  s= 30
+j= 24  step= 145  s= 30
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 146
+i= 23  s= 59  d= 2  indexSteps= 23  lenListSteps= 250
+j= 25  step= 194  s= 59
+j= 24  step= 145  s= 59
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 194
+i= 24  s= 57  d= 3  indexSteps= 23  lenListSteps= 250
+j= 26  step= 146  s= 57
+j= 25  step= 194  s= 57
+j= 24  step= 145  s= 57
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 146
+i= 25  s= 44  d= 8  indexSteps= 23  lenListSteps= 250
+j= 31  step= 151  s= 44
+j= 30  step= 246  s= 44
+j= 29  step= 235  s= 44
+j= 28  step= 72  s= 44
+j= 27  step= 231  s= 44
+j= 26  step= 146  s= 44
+j= 25  step= 194  s= 44
+j= 24  step= 145  s= 44
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 151
+i= 26  s= 18  d= 3  indexSteps= 23  lenListSteps= 250
+i= 27  s= 12  d= 2  indexSteps= 23  lenListSteps= 250
+i= 28  s= 11  d= 4  indexSteps= 23  lenListSteps= 250
+i= 29  s= 2  d= 5  indexSteps= 23  lenListSteps= 250
+i= 30  s= 59  d= 9  indexSteps= 23  lenListSteps= 250
+j= 32  step= 166  s= 59
+j= 31  step= 151  s= 59
+j= 30  step= 246  s= 59
+j= 29  step= 235  s= 59
+j= 28  step= 72  s= 59
+j= 27  step= 231  s= 59
+j= 26  step= 146  s= 59
+j= 25  step= 194  s= 59
+j= 24  step= 145  s= 59
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 166
+i= 31  s= 33  d= 11  indexSteps= 23  lenListSteps= 250
+j= 34  step= 56  s= 33
+j= 33  step= 101  s= 33
+j= 32  step= 166  s= 33
+j= 31  step= 151  s= 33
+j= 30  step= 246  s= 33
+j= 29  step= 235  s= 33
+j= 28  step= 72  s= 33
+j= 27  step= 231  s= 33
+j= 26  step= 146  s= 33
+j= 25  step= 194  s= 33
+j= 24  step= 145  s= 33
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 56
+i= 32  s= 43  d= 9  indexSteps= 23  lenListSteps= 250
+j= 32  step= 166  s= 43
+j= 31  step= 151  s= 43
+j= 30  step= 246  s= 43
+j= 29  step= 235  s= 43
+j= 28  step= 72  s= 43
+j= 27  step= 231  s= 43
+j= 26  step= 146  s= 43
+j= 25  step= 194  s= 43
+j= 24  step= 145  s= 43
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 166
+i= 33  s= 22  d= 4  indexSteps= 23  lenListSteps= 250
+i= 34  s= 51  d= 5  indexSteps= 23  lenListSteps= 250
+j= 28  step= 72  s= 51
+j= 27  step= 231  s= 51
+j= 26  step= 146  s= 51
+j= 25  step= 194  s= 51
+j= 24  step= 145  s= 51
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 72
+i= 35  s= 16  d= 7  indexSteps= 23  lenListSteps= 250
+i= 36  s= 49  d= 2  indexSteps= 23  lenListSteps= 250
+j= 25  step= 194  s= 49
+j= 24  step= 145  s= 49
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 194
+i= 37  s= 50  d= 2  indexSteps= 23  lenListSteps= 250
+j= 25  step= 194  s= 50
+j= 24  step= 145  s= 50
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 194
+i= 38  s= 18  d= 1  indexSteps= 23  lenListSteps= 250
+i= 39  s= 39  d= 8  indexSteps= 23  lenListSteps= 250
+j= 31  step= 151  s= 39
+j= 30  step= 246  s= 39
+j= 29  step= 235  s= 39
+j= 28  step= 72  s= 39
+j= 27  step= 231  s= 39
+j= 26  step= 146  s= 39
+j= 25  step= 194  s= 39
+j= 24  step= 145  s= 39
+found = False  indexSteps= 23  step= 28  result= 0
+last step= 151
+i= 40  s= 5  d= 2  indexSteps= 23  lenListSteps= 250
+i= 41  s= 8  d= 4  indexSteps= 23  lenListSteps= 250
+i= 42  s= 10  d= 5  indexSteps= 23  lenListSteps= 250
+i= 43  s= 23  d= 30  indexSteps= 23  lenListSteps= 250
+i= 44  s= 13  d= 10  indexSteps= 23  lenListSteps= 250
+i= 45  s= 42  d= 17  indexSteps= 23  lenListSteps= 250
+j= 40  step= 211  s= 42
+j= 39  step= 110  s= 42
+j= 38  step= 161  s= 42
+j= 37  step= 40  s= 42
+found = True  indexSteps= 37  step= 40  result= 0
+last step= 122
+j= 54  step= 122  s= 42
+j= 53  step= 242  s= 42
+j= 52  step= 30  s= 42
+found = True  indexSteps= 52  step= 30  result= 0
+last step= 7
+j= 69  step= 7  s= 42
+found = True  indexSteps= 69  step= 7  result= 0
+last step= 109
+j= 86  step= 109  s= 42
+j= 85  step= 111  s= 42
+j= 84  step= 216  s= 42
+j= 83  step= 119  s= 42
+j= 82  step= 127  s= 42
+j= 81  step= 26  s= 42
+found = True  indexSteps= 81  step= 26  result= 0
+last step= 33
+j= 98  step= 33  s= 42
+found = True  indexSteps= 98  step= 33  result= 0
+last step= 132
+j= 115  step= 132  s= 42
+j= 114  step= 157  s= 42
+j= 113  step= 78  s= 42
+j= 112  step= 116  s= 42
+j= 111  step= 64  s= 42
+j= 110  step= 58  s= 42
+j= 109  step= 57  s= 42
+j= 108  step= 123  s= 42
+j= 107  step= 248  s= 42
+j= 106  step= 84  s= 42
+j= 105  step= 223  s= 42
+j= 104  step= 191  s= 42
+j= 103  step= 134  s= 42
+j= 102  step= 198  s= 42
+j= 101  step= 131  s= 42
+j= 100  step= 156  s= 42
+j= 99  step= 141  s= 42
+found = False  indexSteps= 98  step= 33  result= 0
+last step= 132
+i= 46  s= 33  d= 20  indexSteps= 98  lenListSteps= 250
+j= 118  step= 147  s= 33
+j= 117  step= 135  s= 33
+j= 116  step= 38  s= 33
+j= 115  step= 132  s= 33
+j= 114  step= 157  s= 33
+j= 113  step= 78  s= 33
+j= 112  step= 116  s= 33
+j= 111  step= 64  s= 33
+j= 110  step= 58  s= 33
+j= 109  step= 57  s= 33
+j= 108  step= 123  s= 33
+j= 107  step= 248  s= 33
+j= 106  step= 84  s= 33
+j= 105  step= 223  s= 33
+j= 104  step= 191  s= 33
+j= 103  step= 134  s= 33
+j= 102  step= 198  s= 33
+j= 101  step= 131  s= 33
+j= 100  step= 156  s= 33
+j= 99  step= 141  s= 33
+found = False  indexSteps= 98  step= 33  result= 0
+last step= 147
+i= 47  s= 40  d= 9  indexSteps= 98  lenListSteps= 250
+j= 107  step= 248  s= 40
+j= 106  step= 84  s= 40
+j= 105  step= 223  s= 40
+j= 104  step= 191  s= 40
+j= 103  step= 134  s= 40
+j= 102  step= 198  s= 40
+j= 101  step= 131  s= 40
+j= 100  step= 156  s= 40
+j= 99  step= 141  s= 40
+found = False  indexSteps= 98  step= 33  result= 0
+last step= 248
+i= 48  s= 52  d= 12  indexSteps= 98  lenListSteps= 250
+j= 110  step= 58  s= 52
+j= 109  step= 57  s= 52
+j= 108  step= 123  s= 52
+j= 107  step= 248  s= 52
+j= 106  step= 84  s= 52
+j= 105  step= 223  s= 52
+j= 104  step= 191  s= 52
+j= 103  step= 134  s= 52
+j= 102  step= 198  s= 52
+j= 101  step= 131  s= 52
+j= 100  step= 156  s= 52
+j= 99  step= 141  s= 52
+found = False  indexSteps= 98  step= 33  result= 0
+last step= 58
+i= 49  s= 49  d= 3  indexSteps= 98  lenListSteps= 250
+j= 101  step= 131  s= 49
+j= 100  step= 156  s= 49
+j= 99  step= 141  s= 49
+found = False  indexSteps= 98  step= 33  result= 0
+last step= 131
+i= 50  s= 1  d= 16  indexSteps= 98  lenListSteps= 250
+i= 51  s= 99  d= 27  indexSteps= 98  lenListSteps= 250
+j= 125  step= 149  s= 99
+j= 124  step= 27  s= 99
+found = True  indexSteps= 124  step= 27  result= 0
+last step= 202
+j= 151  step= 202  s= 99
+j= 150  step= 90  s= 99
+found = True  indexSteps= 150  step= 90  result= 0
+last step= 85
+j= 177  step= 85  s= 99
+found = True  indexSteps= 177  step= 85  result= 0
+last step= 31
+j= 204  step= 31  s= 99
+found = True  indexSteps= 204  step= 31  result= 0
+last step= 163
+j= 231  step= 163  s= 99
+j= 230  step= 39  s= 99
+found = True  indexSteps= 230  step= 39  result= 0
+found = True  indexSteps= 230  step= 39  result= 51
